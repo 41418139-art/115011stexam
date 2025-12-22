@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8"> <title>Sleep follower</title>
+    <link rel="stylesheet" href="sleepfollow.css"> </head>
+<body>
+
+    <div class="vibe-container"> <header>
+            <h1>Sleep Pulse</h1> <p class="subtitle">good nihgt,get ready to bed</p> </header>
+
+        <div class="tracker-card"> <div class="input-group">
+                <label>sleep Time</label>
+                <input type="time" id="sleepTime" value="23:00"> </div>
+
+            <div class="input-group">
+                <label>wakeup time</label>
+                <input type="time" id="wakeTime" value="07:00"> </div>
+
+            <button id="trackBtn">record this sleep</button> </div>
+
+        <div class="stats-area" id="statsArea">
+            <div class="stat-box">
+                <span class="label">estimated sleep time</span>
+                <span class="value" id="hoursResult">0h</span> </div>
+        </div>
+
+        <ul class="log-list" id="logList"></ul> 
+    </div>
+
+    <script src="sleepfollow.js"></script> </body>
+</html>

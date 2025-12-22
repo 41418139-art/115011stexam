@@ -1,0 +1,93 @@
+/* 定義全域變數與背景 */
+:root {
+    --night-blue: #0f172a; /* 深夜底色 */
+    --vibe-purple: #8b5cf6; /* 靈動紫色 */
+    --glass: rgba(255, 255, 255, 0.05); /* 磨砂玻璃半透明色 */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex; /* 使用 Flexbox 置中整體 */
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top right, #1e1b4b, var(--night-blue)); /* 徑向漸層營造空間感 */
+    color: white;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    overflow: hidden; /* 防止滾動條破壞氛圍 */
+}
+
+/* 磨砂玻璃容器 */
+.vibe-container {
+    width: 380px;
+    padding: 40px;
+    background: var(--glass); /* 半透明背景 */
+    backdrop-filter: blur(20px); /* 核心：背景模糊效果 */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* 極細邊框增強質感 */
+    border-radius: 30px; /* 大圓角 */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); /* 懸浮深層陰影 */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: -1px; /* 緊湊字體排版 */
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #94a3b8; /* 灰藍色辅助文字 */
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 0.8rem;
+    color: var(--vibe-purple); /* 紫色標籤 */
+    margin-left: 5px;
+}
+
+input[type="time"] {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2); /* 輸入框深色背景 */
+    border: none;
+    padding: 12px;
+    color: white;
+    border-radius: 12px;
+    margin-top: 5px;
+    outline: none; /* 移除點擊藍框 */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #6366f1, #a855f7); /* 按鈕漸層 */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* 加入點擊過渡動畫 */
+}
+
+button:active {
+    transform: scale(0.95); /* 點擊時縮小的 Q 彈感 */
+}
+
+.stats-area {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    display: block; /* 讓數字獨佔一行 */
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.5); /* 數字發光效果 */
+}
