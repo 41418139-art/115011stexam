@@ -1,0 +1,26 @@
+body {
+    background-color: #FFFACD; /* 整頁背景設為粉黃色 (LemonChiffon) */
+    font-family: "Microsoft JhengHei", "標楷體", serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: red;       /* 詩的標題設為紅色 */
+    font-size: 36pt;  /* 36點字 */
+    margin-bottom: 20px;
+}
+
+.poem-content {
+    color: brown;     /* 詩的內容設為棕色 */
+    font-size: 24pt;  /* 24點字 */
+    line-height: 1.8;
+}
+
+.poet-img {
+    width: 200px;               /* 寬為200px */
+    border: 3px solid #5C3317;  /* 深棕色圖框線(3px) */
+    border-radius: 20px;        /* 四周做成圓角(半徑20px) */
+    margin: 30px auto;
+    display: block;
+}
