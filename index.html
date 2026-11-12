@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8"> <title>Sleep follower</title>
-    <link rel="stylesheet" href="sleepfollow.css"> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網頁 - 陳誼弘</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .profile {
+            color: blue;
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.8;
+        }
+        .links {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        .links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-    <p style="text-align: center;margin-top:0;">41418139 陳誼弘</p>
 
-    <div class="vibe-container"> <header>
-            <h1>Sleep Pulse</h1> <p class="subtitle">good nihgt,get ready to bed</p> </header>
-
-        <div class="tracker-card"> <div class="input-group">
-                <label>sleep Time</label>
-                <input type="time" id="sleepTime" value="23:00"> </div>
-
-            <div class="input-group">
-                <label>wakeup time</label>
-                <input type="time" id="wakeTime" value="07:00"> </div>
-
-            <button id="trackBtn">record this sleep</button> </div>
-
-        <div class="stats-area" id="statsArea">
-            <div class="stat-box">
-                <span class="label">estimated sleep time</span>
-                <span class="value" id="hoursResult">0h</span> </div>
-        </div>
-
-        <ul class="log-list" id="logList"></ul> 
+    <div class="profile">
+        <h1>個人資料</h1>
+        <p>學號: 41418139</p>
+        <p>姓名: 陳誼弘</p>
     </div>
 
-    <script src="sleepfollow.js"></script> </body>
+    <div class="links">
+        <a href="poem1.html">詩的賞析1</a>
+        <a href="poem2.html">詩的賞析2</a>
+    </div>
 
+</body>
 </html>
